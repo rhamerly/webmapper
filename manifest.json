@@ -1,0 +1,17 @@
+{
+  "name": "Web History Mapper",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Constructs a map of the web using the user's browser history.",
+  "background": {"scripts": ["background.js"]},
+  "browser_action": {
+    "default_icon": "icon-19x19.png"
+  },
+  "permissions": [
+	"tabs",
+	"history",
+	"chrome://favicon/",
+	"storage",
+	"unlimitedStorage"
+  ]
+}

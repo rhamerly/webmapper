@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web History Mapper</title>
+	<link rel="SHORTCUT ICON" href="icon-19x19.png" />
+	<!-- .node, above, from http://bl.ocks.org/4063582 -->
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+	<link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
+    <script type="text/javascript" src="caching.js"></script>
+	<script type="text/javascript" src="clustering.js"></script>
+    <script type="text/javascript" src="display.js"></script>
+    <script type="text/javascript" src="display-distort.js"></script>
+    <script type="text/javascript" src="language.js"></script>
+    <script type="text/javascript" src="load-history.js"></script>
+    <script type="text/javascript" src="parseuri.js"></script>
+    <script type="text/javascript" src="interaction.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+	<script type="text/javascript" src="temp-display.js"></script>
+	<script type="text/javascript" src="toolbar.js"></script>
+	<script type="text/javascript" src="treemap.js"></script>
+	<script type="text/javascript" src="treemap-zoom.js"></script>
+    <script type="text/javascript" src="urltree.js"></script>
+    <script type="text/javascript" src="bubble.js"></script>
+    <script type="text/javascript" src="SArray.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="quadtree.js"></script>
+	<script type="text/javascript" src="underscore.js"></script>
+	<script type="text/javascript" src="voronoi.js"></script>
+	<script type="text/javascript" src="voronoi2.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="d3.v2.min.js"></script>
+  </head>
+  <body style="overflow: hidden">
+  	<div style="background-color: #000000; width: 100%; height: 30px; padding: 10px 0px;" id="header">
+  		<div style="position:absolute; left:10px; top:0px; color:whiteSmoke; font-size:30px; text-align:left;">
+  			<img src="icon-50x50.png"/>
+  		</div>
+  		<div style="position:absolute; left:75px; top:10px; width:120px; color:whiteSmoke; font-size:30px;">
+  			<b>Webmapper</b>
+  		</div>
+  		<div style="position: absolute; left:270px; top:9px; padding: 0px 10px; border-left:1px solid #bbbbbb;">
+  			<form id="search">
+  				<input id="searchBox" style="font-size:18px; color:#AAAAAA; padding: 2px 25px 2px 5px;" type="text" size=27 value="Search">
+  				<!-- The little icon comes from here: http://en.wikipedia.org/wiki/File:Magnifying_glass_icon.svg.  Credit: Wikipedia user Derferman.  It's public domain. -->
+				<div id="searchButtonGo" style="position:absolute; left:315px; top:8px; opacity:0.4; margin:0px; background:none; border:none; "><img src="mag-18.png"></img></div>			
+				<div id="searchButtonX" style="position:absolute; left:315px; top:8px; opacity:0.4; margin:0px; background:none; border:none; "><img src="x-18.png"></img></div>			
+  			</form>
+  		</div>
+		
+		<div style="position: absolute; left:590px; top:11px; padding: 0px;" id="refreshbutton"><img src="reload-icon.png"></img></div>
+		<div style="position: absolute; left:620px; top:11px; padding: 3px 3px 0px 3px;" class="toolbutton" id="colorbutton"></div>
+		<div style="position: absolute; left:650px; top:11px; padding: 3px 3px 0px 3px;" class="toolbutton" id="subcolorbutton"></div>
+		<div style="position: absolute; left:680px; top:11px; height: 19px; padding: 6px 5px 4px 5px;" class="toolbutton" id="lookbackbutton"><div id="lookbackbutton-text" style="float:left; width:35px; text-align:left;">10d</div><div style="float:left; margin: 3px 1px 3px 3px; font-size: 8px; vertical-align: middle;">&#x25bc;</div></div>
+		<div style="position: absolute; left:745px; top:11px; height: 27px; padding: 1px 6px 1px 6px; font-size: 24px;" class="toolbutton" id="helpbutton"><b>?</b></div>
+  	</div>
+	<div id="app" style="width: 100%; padding-top: 10px;">
+  		<!-- This is where our SVG element goes. -->
+  	</div>
+  	<div id="tip">tootip</div>
+	<div id="colorpicker"></div>
+	<div id="subcolorpicker"></div>
+	<div id="lookbackpicker"></div>
+	<div id="helpbox"></div>
+  </body>
+</html>

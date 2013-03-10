@@ -1,0 +1,207 @@
+body {
+	text-align: center;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	background: #ccc;	
+}
+
+h1 {
+	background: #333;
+	color: whiteSmoke;	
+	padding: 10px 0px;
+	margin: 0;
+}
+
+button{
+	margin-top:15px;
+	font-size:130%;
+}
+
+#app {
+	
+	width: 100%;
+}
+
+#tip {
+	display: none;
+	position: absolute;
+	display: none;
+	background: #FFF;
+	border-radius: 5px;
+	padding: 2px;
+	border: solid 2px #999;
+	font-size: 0.8em;	
+}
+#tip2 {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	display: none;
+	background: #FFF;
+	border-radius: 5px;
+	padding: 2px;
+	border: solid 2px #999;
+	font-size: 0.8em;	
+}
+
+svg circle:hover{
+	fill: #FFF;
+}
+
+svg text{
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+svg text:hover{
+	text-decoration: underline;
+}
+
+.debug text {
+  font: 8px sans-serif;
+}	  	  
+
+
+circle {
+  fill: rgb(31, 119, 180);
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1;
+}
+
+#homeBtn{
+	display: inline-block;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 5px;
+	border: solid 2px #FFF;
+}
+
+#homeBtn:hover{
+	border: solid 2px #999;
+}
+
+div.toolbutton-inactive
+{
+/*	background-color:#000;*/
+	background-color:#fff;
+	border: solid 0px #aaa;
+}
+
+/* #000 #252525 (*) #000 #333 #22 #555 */
+/* #ccc #aaa (*) #fff #aaa #bbb #888 */
+
+div.toolbutton
+{
+/*	background-color:#000;*/
+	background-color:#000;
+	color:#fff;
+	font: 16px sans-serif;
+	border: solid 0px #333;
+	cursor: default;
+}
+
+div.toolbutton:hover
+{
+/*	background-color:#252525;*/
+	background-color:#333;
+}
+
+div.toolbutton-active
+{
+	background-color:#444;
+	color:#fff;
+	font: 16px sans-serif;
+	border: solid 0px #333;
+}
+
+div.toolbutton-active:hover
+{
+	background-color:#888;
+}
+
+
+div.toolbutton-unselected
+{
+/*	background-color:#000;*/
+	background-color:#444;
+	color:#fff;
+	font: 16px sans-serif;
+	padding: 4px 3px 1px 3px;
+	float:left;
+}
+
+div.toolbutton-unselected:hover
+{
+/*	background-color:#333;*/
+	background-color:#888;
+}
+
+div.toolbutton-selected
+{
+/*	background-color:#222;
+	border: solid 1px #fff;*/
+	background-color:#666;
+	color:#fff;
+	font: 16px sans-serif;
+	border: solid 1px #fff;
+	padding: 3px 3px 0px 3px;
+	float:left;
+}
+
+div.toolbutton-selected:hover
+{
+/*	background-color:#555;*/
+	background-color:#999;
+}
+
+#colorpicker {
+	display: none;
+	position: absolute;
+	display: none;
+	background: #252525;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #fff;
+}
+
+#subcolorpicker {
+	display: none;
+	position: absolute;
+	display: none;
+	background: #252525;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #fff;
+}
+
+#lookbackpicker {
+	display: none;
+	position: absolute;
+	display: none;
+	background: #252525;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #fff;
+	cursor:default;
+}
+
+#refreshbutton {
+	margin: 3px;
+	background: #000000;
+	opacity: 0.8;
+}
+
+#refreshbutton:hover {
+	background: #000000;
+	opacity: 1.0;
+}
